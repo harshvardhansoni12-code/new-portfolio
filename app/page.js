@@ -74,7 +74,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen relative flex flex-col items-center justify-start px-4 sm:px-6 md:px-8 py-6 sm:py-10 selection:bg-[#E6DFD4] selection:text-[#201A16]">
+    <div className="portfolio-root min-h-screen relative flex flex-col items-center justify-start px-4 sm:px-6 md:px-8 py-6 sm:py-10 selection:bg-[#E6DFD4] selection:text-[#201A16]">
       {/* Background Japanese Pagoda Artwork */}
       <PagodaWatermark />
 
