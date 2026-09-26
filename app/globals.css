@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --bg-parchment: #FAF7F2;
+  --bg-card: #F4EFE6;
+  --text-primary: #2D2621;
+  --text-secondary: #70655B;
+  --text-muted: #9E9387;
+  --border-subtle: #E8E1D5;
+  --border-card: #DFD7C9;
+  --accent-olive: #605B48;
+}
+
+@theme inline {
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-sans: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-parchment: var(--bg-parchment);
+  --color-card-bg: var(--bg-card);
+  --color-stone-text: var(--text-primary);
+  --color-stone-muted: var(--text-secondary);
+}
+
+body {
+  background-color: var(--bg-parchment);
+  color: var(--text-primary);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DDD5C7;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C4B9A7;
+}
+
+/* Monospace link underline aesthetic */
+.link-underlined {
+  text-decoration: underline;
+  text-decoration-color: #B5A898;
+  text-underline-offset: 3px;
+  transition: all 0.15s ease-in-out;
+}
+
+.link-underlined:hover {
+  color: #1A1512;
+  text-decoration-color: #4A3E34;
+}
+
+/* Keyboard hint badge */
+.kbd-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #8C8073;
+}
+
+/* Wave animation for music player */
+@keyframes soundwave {
+  0%, 100% { height: 4px; }
+  50% { height: 14px; }
+}
+
+.wave-bar-1 { animation: soundwave 1.2s ease-in-out infinite; }
+.wave-bar-2 { animation: soundwave 1.2s ease-in-out infinite 0.2s; }
+.wave-bar-3 { animation: soundwave 1.2s ease-in-out infinite 0.4s; }
+.wave-bar-4 { animation: soundwave 1.2s ease-in-out infinite 0.1s; }
