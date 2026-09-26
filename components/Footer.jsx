@@ -94,7 +94,7 @@ export default function Footer({ currentTime, onOpenShortcuts }) {
         <button
           type="button"
           onClick={onOpenShortcuts}
-          className="text-[11.5px] text-[#8C7F72] hover:text-[#3A3026] transition-colors cursor-pointer"
+          className="hidden sm:inline-block text-[11.5px] text-[#8C7F72] hover:text-[#3A3026] transition-colors cursor-pointer"
           aria-label="Open keyboard shortcuts"
         >
           press{" "}

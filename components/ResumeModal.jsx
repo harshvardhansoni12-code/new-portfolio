@@ -27,15 +27,15 @@ export default function ResumeModal({ isOpen, onClose }) {
             <span>{personalInfo.email}</span>
             <span>·</span>
             <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="link-underlined">
-              LinkedIn
+              linkedin
             </a>
             <span>·</span>
             <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="link-underlined">
-              GitHub
+              github
             </a>
             <span>·</span>
             <button onClick={onClose} className="link-underlined cursor-pointer text-[#736658] hover:text-[#2A211B]">
-              Portfolio
+              portfolio
             </button>
           </p>
         </div>
@@ -44,8 +44,8 @@ export default function ResumeModal({ isOpen, onClose }) {
         <div className="space-y-6 text-sm text-[#453B31]">
           {/* Projects Section */}
           <div className="space-y-4">
-            <h4 className="font-mono font-bold text-xs uppercase tracking-wider text-[#736556] border-b border-[#ECE4D8] pb-1">
-              Projects
+            <h4 className="font-mono font-bold text-xs tracking-wider text-[#736556] border-b border-[#ECE4D8] pb-1">
+              projects
             </h4>
 
             {projects.map((proj) => (
@@ -61,7 +61,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                           rel="noopener noreferrer"
                           className="link-underlined text-[#2E251E]"
                         >
-                          Live
+                          live
                         </a>
                         <span>·</span>
                       </>
@@ -72,12 +72,12 @@ export default function ResumeModal({ isOpen, onClose }) {
                       rel="noopener noreferrer"
                       className="link-underlined text-[#2E251E]"
                     >
-                      Code
+                      code
                     </a>
                   </span>
                 </div>
                 <div className="font-mono text-xs text-[#706355]">
-                  Tech Stack: {proj.techStack || proj.tags.join(", ")}
+                  tech stack: {proj.techStack || proj.tags.join(", ")}
                 </div>
                 {proj.bullets && proj.bullets.length > 0 ? (
                   <ul className="space-y-1 text-xs sm:text-sm text-[#50443A] leading-relaxed">
@@ -99,8 +99,8 @@ export default function ResumeModal({ isOpen, onClose }) {
 
           {/* Education */}
           <div className="space-y-2">
-            <h4 className="font-mono font-bold text-xs uppercase tracking-wider text-[#736556] border-b border-[#ECE4D8] pb-1">
-              Education
+            <h4 className="font-mono font-bold text-xs tracking-wider text-[#736556] border-b border-[#ECE4D8] pb-1">
+              education
             </h4>
             <div className="flex justify-between items-baseline">
               <div>
@@ -115,8 +115,8 @@ export default function ResumeModal({ isOpen, onClose }) {
 
           {/* Technical Skills */}
           <div className="space-y-2">
-            <h4 className="font-mono font-bold text-xs uppercase tracking-wider text-[#736556] border-b border-[#ECE4D8] pb-1">
-              Technical Skills
+            <h4 className="font-mono font-bold text-xs tracking-wider text-[#736556] border-b border-[#ECE4D8] pb-1">
+              technical skills
             </h4>
             <div className="font-mono text-xs space-y-1 text-[#4F4338]">
               {skills.map((s) => (

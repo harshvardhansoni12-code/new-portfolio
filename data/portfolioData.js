@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "harsh",
-  fullName: "HARSH VARDHAN SONI",
+  fullName: "harsh vardhan soni",
   handle: "techitachi_ · next.js / react · full-stack & aiml",
   email: "harshvardhansoni012004@gmail.com",
   phone: "6269584026",
@@ -14,18 +14,18 @@ export const personalInfo = {
 export const projects = [
   {
     id: "shrinkster",
-    title: "Shrinkster",
-    resumeTitle: "Shrinkster",
+    title: "shrinkster",
+    resumeTitle: "shrinkster",
     subtitle: "modern, high-speed url shortening service with analytics & custom aliases",
-    tags: ["Next.js", "React", "JavaScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Node.js", "REST API", "Vercel"],
-    techStack: "Next.js, React, JavaScript, Tailwind CSS, Prisma, PostgreSQL, Node.js, REST API, Vercel",
+    tags: ["next.js", "react", "javascript", "tailwind css", "prisma", "postgresql", "node.js", "rest api", "vercel"],
+    techStack: "next.js, react, javascript, tailwind css, prisma, postgresql, node.js, rest api, vercel",
     description:
       "a minimalist url shortener that converts long urls into short, shareable links. features high-speed redirection routing, custom alias creation, copy utilities, and backend route optimization.",
     details:
-      "Developed with Next.js and React to provide an instant, frictionless user experience. Designed backend API routes for rapid hash generation, collision-free code mapping, and sub-millisecond redirection. Backed by PostgreSQL and Prisma ORM for robust link persistence.",
+      "developed with next.js and react to provide an instant, frictionless user experience. designed backend api routes for rapid hash generation, collision-free code mapping, and sub-millisecond redirection. backed by postgresql and prisma orm for robust link persistence.",
     bullets: [
-      "Built the frontend using Next.js and React to create a clean, responsive user interface for entering URLs and copying generated short links.",
-      "Implemented backend API routes for creating shortened URLs and redirecting short codes to their original destinations.",
+      "built the frontend using next.js and react to create a clean, responsive user interface for entering urls and copying generated short links.",
+      "implemented backend api routes for creating shortened urls and redirecting short codes to their original destinations.",
     ],
     showLiveInResume: true,
     github: "https://github.com/harshvardhansoni12-code",
@@ -34,17 +34,17 @@ export const projects = [
   {
     id: "examinee",
     title: "examinee",
-    resumeTitle: "Examinee (AI powered quiz app)",
+    resumeTitle: "examinee (ai powered quiz app)",
     subtitle: "ai powered study & revision platform for automated flashcards, notes, & mcqs",
-    tags: ["Next.js", "React", "JavaScript", "Tailwind CSS", "shadcn/ui", "Framer Motion", "NextAuth", "Prisma", "PostgreSQL", "Google Gemini API", "Node.js", "REST API"],
-    techStack: "Next.js, React, JavaScript, Tailwind CSS, shadcn/ui, Framer Motion, NextAuth, Prisma, PostgreSQL, Google Gemini API, Node.js, REST API",
+    tags: ["next.js", "react", "javascript", "tailwind css", "shadcn/ui", "framer motion", "nextauth", "prisma", "postgresql", "google gemini api", "node.js", "rest api"],
+    techStack: "next.js, react, javascript, tailwind css, shadcn/ui, framer motion, nextauth, prisma, postgresql, google gemini api, node.js, rest api",
     description:
       "an ai-powered study and revision platform that transforms student notes and raw pdfs into structured study outputs with automatic summary generation, smart flashcard creation, and mcq quizzes for efficient exam prep.",
     details:
-      "Built using Next.js, React, Tailwind CSS, shadcn/ui, and Framer Motion for a fluid frontend experience. Integrated Google Gemini API for structured prompt workflows and parsing complex study materials. Implemented NextAuth for authentication and PostgreSQL with Prisma for storing student progress, quiz results, and flashcard decks.",
+      "built using next.js, react, tailwind css, shadcn/ui, and framer motion for a fluid frontend experience. integrated google gemini api for structured prompt workflows and parsing complex study materials. implemented nextauth for authentication and postgresql with prisma for storing student progress, quiz results, and flashcard decks.",
     bullets: [
-      "Developed features for automatic summary generation, flashcard creation, and MCQ generation to support exam preparation.",
-      "Integrated AI generation workflows with Gemini API to transform raw text into structured study outputs.",
+      "developed features for automatic summary generation, flashcard creation, and mcq generation to support exam preparation.",
+      "integrated ai generation workflows with gemini api to transform raw text into structured study outputs.",
     ],
     showLiveInResume: false,
     github: "https://github.com/harshvardhansoni12-code",
@@ -53,18 +53,18 @@ export const projects = [
   {
     id: "chat-mini",
     title: "chat-mini",
-    resumeTitle: "Chat-mini (Message-app)",
+    resumeTitle: "chat-mini (message-app)",
     subtitle: "real-time room-based messaging app with typing indicators & presence tracking",
-    tags: ["Next.js", "React", "JavaScript", "Tailwind CSS", "Node.js", "Socket.IO", "Prisma", "PostgreSQL", "NextAuth", "Node.js", "REST API"],
-    techStack: "Next.js, React, JavaScript, Tailwind CSS, Node.js, Socket.IO, Prisma, PostgreSQL, NextAuth, Node.js, REST API",
+    tags: ["next.js", "react", "javascript", "tailwind css", "node.js", "socket.io", "prisma", "postgresql", "nextauth", "node.js", "rest api"],
+    techStack: "next.js, react, javascript, tailwind css, node.js, socket.io, prisma, postgresql, nextauth, node.js, rest api",
     description:
       "real-time chat application with room-based messaging. users can create rooms, join instantly, exchange live messages, view typing indicators, and track room participant updates with persistent storage.",
     details:
-      "Engineered with Socket.IO and WebSockets on Node.js/Express for bi-directional event broadcast. Uses PostgreSQL via Prisma to persist message histories and room records. Features responsive UI with Tailwind CSS, NextAuth session management, and live typing indicators.",
+      "engineered with socket.io and websockets on node.js/express for bi-directional event broadcast. uses postgresql via prisma to persist message histories and room records. features responsive ui with tailwind css, nextauth session management, and live typing indicators.",
     bullets: [
-      "Users can create rooms, join rooms, and send messages instantly",
-      "Persistent chat data stored in PostgreSQL via Prisma",
-      "Live features include typing indicators, room/member updates, and socket-based communication",
+      "users can create rooms, join rooms, and send messages instantly",
+      "persistent chat data stored in postgresql via prisma",
+      "live features include typing indicators, room/member updates, and socket-based communication",
     ],
     showLiveInResume: false,
     github: "https://github.com/harshvardhansoni12-code",
@@ -74,26 +74,26 @@ export const projects = [
 
 export const skills = [
   {
-    category: "Languages",
-    items: "JavaScript, TypeScript, SQL, Python",
+    category: "languages",
+    items: "javascript, typescript, sql, python",
   },
   {
-    category: "Frontend",
-    items: "React, Next.js, HTML5, CSS3, Tailwind CSS",
+    category: "frontend",
+    items: "react, next.js, html5, css3, tailwind css",
   },
   {
-    category: "Backend",
-    items: "Node.js, Express.js, REST APIs, WebSockets, Socket.IO, API-Integration",
+    category: "backend",
+    items: "node.js, express.js, rest apis, websockets, socket.io, api-integration",
   },
   {
-    category: "Tools",
-    items: "Git, GitHub, VS Code, Postman, Docker",
+    category: "tools",
+    items: "git, github, vs code, postman, docker",
   },
 ];
 
 export const education = {
-  institution: "BADERIA GLOBAL COLLEGE OF ENGINEERING AND MANAGEMENT",
-  degree: "BTECH in AIML",
+  institution: "baderia global college of engineering and management",
+  degree: "btech in aiml",
   graduation: "",
   coursework: "",
 };

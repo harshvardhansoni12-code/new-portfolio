@@ -6,7 +6,7 @@ export default function Navbar({ onOpenResume, onOpenShortcuts }) {
   };
 
   return (
-    <header className="sticky top-4 z-40 w-full max-w-2xl">
+    <header className="hidden sm:block sticky top-4 z-40 w-full max-w-2xl">
       <nav className="bg-[#FAF7F2]/85 backdrop-blur-md border border-[#E5DEC3] rounded-2xl sm:rounded-full px-3 sm:px-5 py-2.5 shadow-[0_2px_12px_rgba(0,0,0,0.04)] flex items-center justify-between gap-1 sm:gap-3 text-[13px] sm:text-[14px] font-mono text-[#5A4F44]">
         <div className="flex items-center gap-1 sm:gap-2.5 overflow-x-auto no-scrollbar">
           <button
