@@ -85,9 +85,12 @@ export default function Home() {
       />
 
       {/* Main Content Container */}
-      <main className="w-full max-w-2xl mt-1 sm:mt-12 z-10 space-y-12 sm:space-y-16">
+      <main className="w-full max-w-2xl mt-1 sm:mt-12 z-10 space-y-9 sm:space-y-12">
         <Hero onSelectProject={(id) => setActiveProjectModal(id)} />
-        <Projects onSelectProject={(id) => setActiveProjectModal(id)} />
+        <Projects
+          onSelectProject={(id) => setActiveProjectModal(id)}
+          onOpenResume={() => setIsResumeOpen(true)}
+        />
         <Skills />
         <Education />
         <Footer

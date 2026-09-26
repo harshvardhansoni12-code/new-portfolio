@@ -2,12 +2,22 @@
 
 import { projects } from "@/data/portfolioData";
 
-export default function Projects({ onSelectProject }) {
+export default function Projects({ onSelectProject, onOpenResume }) {
   return (
     <section id="projects" className="space-y-6 pt-4">
       <div className="flex items-center justify-between border-b border-[#E8E1D5] pb-2 font-mono">
         <h2 className="text-sm font-bold tracking-wider text-[#574C40]">projects</h2>
-        <span className="text-xs text-[#8A7D70]">selected works</span>
+        <div className="flex items-center gap-2">
+          {onOpenResume && (
+            <button
+              onClick={onOpenResume}
+              className="sm:hidden border border-[#D4CBBF] hover:border-[#9A8D7E] bg-[#FDFBF7] hover:bg-[#F3ECE0] px-2.5 py-0.5 rounded-md text-[#3E342B] transition-all flex items-center gap-1 font-mono text-xs shadow-[0_1px_2px_rgba(0,0,0,0.03)] cursor-pointer"
+            >
+              <span>resume</span>
+            </button>
+          )}
+          <span className="hidden sm:inline text-xs text-[#8A7D70]">selected works</span>
+        </div>
       </div>
 
       <div className="space-y-8">

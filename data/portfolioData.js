@@ -95,5 +95,4 @@ export const education = {
   institution: "baderia global college of engineering and management",
   degree: "btech in aiml",
   graduation: "",
-  coursework: "",
 };
