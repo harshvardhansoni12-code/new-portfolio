@@ -26,10 +26,6 @@ export default function ResumeModal({ isOpen, onClose }) {
             <span>·</span>
             <span>{personalInfo.email}</span>
             <span>·</span>
-            <a href={personalInfo.twitter} target="_blank" rel="noopener noreferrer" className="link-underlined">
-              Twitter
-            </a>
-            <span>·</span>
             <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="link-underlined">
               LinkedIn
             </a>
@@ -37,6 +33,10 @@ export default function ResumeModal({ isOpen, onClose }) {
             <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="link-underlined">
               GitHub
             </a>
+            <span>·</span>
+            <button onClick={onClose} className="link-underlined cursor-pointer text-[#736658] hover:text-[#2A211B]">
+              Portfolio
+            </button>
           </p>
         </div>
 
@@ -49,19 +49,23 @@ export default function ResumeModal({ isOpen, onClose }) {
             </h4>
 
             {projects.map((proj) => (
-              <div key={proj.id} className="space-y-1">
+              <div key={proj.id} className="space-y-1.5">
                 <div className="flex justify-between items-baseline">
-                  <span className="font-bold text-[#2A211B]">{proj.title}</span>
+                  <span className="font-bold text-[#2A211B]">{proj.resumeTitle || proj.title}</span>
                   <span className="font-mono text-xs text-[#827568] flex gap-2">
-                    <a
-                      href={proj.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="link-underlined text-[#2E251E]"
-                    >
-                      Live
-                    </a>
-                    <span>·</span>
+                    {proj.showLiveInResume && proj.demo && (
+                      <>
+                        <a
+                          href={proj.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="link-underlined text-[#2E251E]"
+                        >
+                          Live
+                        </a>
+                        <span>·</span>
+                      </>
+                    )}
                     <a
                       href={proj.github}
                       target="_blank"
@@ -73,11 +77,22 @@ export default function ResumeModal({ isOpen, onClose }) {
                   </span>
                 </div>
                 <div className="font-mono text-xs text-[#706355]">
-                  Tech Stack: {proj.tags.join(", ")}
+                  Tech Stack: {proj.techStack || proj.tags.join(", ")}
                 </div>
-                <p className="text-xs sm:text-sm text-[#50443A] leading-relaxed">
-                  {proj.details}
-                </p>
+                {proj.bullets && proj.bullets.length > 0 ? (
+                  <ul className="space-y-1 text-xs sm:text-sm text-[#50443A] leading-relaxed">
+                    {proj.bullets.map((bullet, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="text-[#8C7F72] shrink-0">•</span>
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-xs sm:text-sm text-[#50443A] leading-relaxed">
+                    {proj.details}
+                  </p>
+                )}
               </div>
             ))}
           </div>
@@ -89,10 +104,12 @@ export default function ResumeModal({ isOpen, onClose }) {
             </h4>
             <div className="flex justify-between items-baseline">
               <div>
-                <div className="font-bold text-[#2A211B] uppercase">{education.institution}</div>
+                <div className="font-bold text-[#2A211B]">{education.institution}</div>
                 <div className="text-xs text-[#75675A]">{education.degree}</div>
               </div>
-              <span className="font-mono text-xs text-[#827568]">{education.graduation}</span>
+              {education.graduation && (
+                <span className="font-mono text-xs text-[#827568]">{education.graduation}</span>
+              )}
             </div>
           </div>
 
@@ -104,7 +121,7 @@ export default function ResumeModal({ isOpen, onClose }) {
             <div className="font-mono text-xs space-y-1 text-[#4F4338]">
               {skills.map((s) => (
                 <div key={s.category}>
-                  <strong className="text-[#2A211B] capitalize">{s.category}:</strong> {s.items}
+                  <strong className="text-[#2A211B]">{s.category}:</strong> {s.items}
                 </div>
               ))}
             </div>
