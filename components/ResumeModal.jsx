@@ -166,7 +166,7 @@ export default function ResumeModal({ isOpen, onClose }) {
         {/* Modal Actions */}
         <div className="resume-print-actions flex items-center justify-end gap-3 pt-4 border-t border-[#E5DEC3] font-mono text-xs">
           <a
-            href="/harsh%20Resume.pdf"
+            href="/harsh-resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 rounded-lg bg-[#ECE5D8] hover:bg-[#DFD6C7] text-[#342B23] transition-colors cursor-pointer"
